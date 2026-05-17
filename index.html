@@ -502,10 +502,12 @@ footer {
 <!-- ══ ABOUT ══ -->
 <section class="about" id="about">
   <div class="about-grid">
-    <div class="about-visual">
-      <img src="hop-care-box.png" alt="Hộp Care Box - Trạm Cứu Trợ Ngày Dâu" style="width:100%; border-radius:16px; margin-bottom:20px; object-fit:cover;">
-      <p class="about-visual-text">"Có những ngày tháng bạn cần được chăm sóc — và điều đó hoàn toàn bình thường."</p>
-      <div class="about-visual-slogan">Take one · Leave one 🌸</div>
+    <div class="about-visual" style="padding:0; overflow:hidden; position:relative;">
+      <img src="hop-care-box.png" alt="Hộp Care Box - Trạm Cứu Trợ Ngày Dâu" style="width:100%; height:340px; object-fit:cover; display:block; border-radius:var(--radius-lg) var(--radius-lg) 0 0;">
+      <div style="background:var(--red); padding:24px 32px; border-radius:0 0 var(--radius-lg) var(--radius-lg);">
+        <p class="about-visual-text">"Có những ngày tháng bạn cần được chăm sóc — và điều đó hoàn toàn bình thường."</p>
+        <div class="about-visual-slogan" style="margin-top:14px;">Take one · Leave one 🌸</div>
+      </div>
     </div>
     <div>
       <div class="section-tag">Về dự án</div>
@@ -677,25 +679,30 @@ footer {
       </div>
     </div>
   </div>
-  <div class="emerg-right">
+  <div class="emerg-right" style="grid-template-columns: repeat(3,1fr); gap:14px;">
     <div class="loc-card">
       <div class="loc-icon">🏛️</div>
-      <strong>Khu A</strong>
+      <strong>Nhà A</strong>
       <span>Tầng 2, 3, 4<br>Nhà vệ sinh nữ</span>
     </div>
     <div class="loc-card">
       <div class="loc-icon">📚</div>
-      <strong>Khu B</strong>
+      <strong>Nhà B</strong>
       <span>Tầng 1, 2, 3<br>Nhà vệ sinh nữ</span>
     </div>
     <div class="loc-card">
       <div class="loc-icon">🎓</div>
-      <strong>Khu C</strong>
+      <strong>Nhà C</strong>
       <span>Tầng 2, 3<br>Nhà vệ sinh nữ</span>
     </div>
     <div class="loc-card">
+      <div class="loc-icon">🌿</div>
+      <strong>Nhà D</strong>
+      <span>Tầng 1, 2, 3<br>Nhà vệ sinh nữ</span>
+    </div>
+    <div class="loc-card">
       <div class="loc-icon">✨</div>
-      <strong>Khu V</strong>
+      <strong>Nhà H</strong>
       <span>Tầng 1, 2<br>Nhà vệ sinh nữ</span>
     </div>
   </div>
