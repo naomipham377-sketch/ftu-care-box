@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cách Dùng Băng Vệ Sinh Đúng Cách – FTU Care Box</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--red:#B5271F;--red-dark:#8C1D16;--red-pale:#FDECEA;--cream:#FDF6F0;--white:#FFFFFF;--text:#2C1A18;--text-mid:#6B3A35;--text-soft:#9E6B66;--radius-sm:12px;--radius-md:20px}
+html{scroll-behavior:smooth}body{font-family:'Be Vietnam Pro',sans-serif;background:var(--cream);color:var(--text);line-height:1.8}a{text-decoration:none;color:inherit}
+.nav-top{background:var(--white);padding:0 6vw;display:flex;align-items:center;justify-content:space-between;height:64px;border-bottom:1px solid #F2D5D2;position:sticky;top:0;z-index:200}
+.nav-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--red)}
+.nav-back{background:var(--red-pale);color:var(--red);border:none;border-radius:50px;padding:8px 20px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
+.nav-back:hover{background:var(--red);color:white}
+.blog-hero{background:var(--red);padding:64px 6vw 48px;overflow:hidden;position:relative}
+.blog-hero::before{content:'';position:absolute;right:-80px;top:-80px;width:400px;height:400px;border-radius:50%;background:rgba(255,255,255,0.06)}
+.blog-hero-inner{max-width:720px;position:relative;z-index:2}
+.blog-cat-tag{display:inline-block;background:rgba(255,255,255,0.2);color:white;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:20px}
+.blog-hero h1{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,46px);color:white;line-height:1.2;margin-bottom:16px}
+.lead{color:rgba(255,255,255,0.82);font-size:16px;font-weight:300;line-height:1.8;max-width:580px;margin-bottom:24px}
+.blog-meta-row{display:flex;gap:20px;flex-wrap:wrap}
+.blog-meta-item{color:rgba(255,255,255,0.65);font-size:13px;display:flex;align-items:center;gap:6px}
+.wrap{max-width:760px;margin:0 auto;padding:56px 6vw}
+.img-ph{width:100%;height:260px;background:var(--red-pale);border-radius:var(--radius-md);border:2px dashed #F2C0BB;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin-bottom:36px}
+.img-ph span:first-child{font-size:48px}.img-ph p{font-size:13px;color:var(--text-soft)}
+.intro-box{background:var(--red-pale);border-left:4px solid var(--red);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:20px 24px;margin-bottom:36px;font-size:15px;color:var(--text-mid);font-style:italic;line-height:1.8}
+.h2{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--text);margin:36px 0 14px}
+.h2 em{font-style:italic;color:var(--red)}
+.cp{font-size:15px;color:var(--text-soft);line-height:1.85;margin-bottom:14px;font-weight:300}
+.steps{display:flex;flex-direction:column;gap:16px;margin-bottom:36px}
+.step{background:var(--white);border:1px solid #F2D5D2;border-radius:var(--radius-md);padding:20px 24px;display:flex;gap:16px;align-items:flex-start}
+.step .sn{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--red);opacity:.2;flex-shrink:0;line-height:1;width:40px}
+.step h3{font-size:15px;font-weight:700;margin-bottom:6px}
+.step p{font-size:13px;color:var(--text-soft);line-height:1.7}
+.back-strip{background:var(--red);padding:40px 6vw;text-align:center}
+.back-strip h3{font-family:'Playfair Display',serif;font-size:22px;color:white;margin-bottom:16px}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.bw{background:white;color:var(--red);border:none;border-radius:50px;padding:12px 28px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bg{background:transparent;color:white;border:2px solid rgba(255,255,255,0.5);border-radius:50px;padding:10px 26px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
+.related{padding:56px 6vw;max-width:760px;margin:0 auto}
+.related h3{font-family:'Playfair Display',serif;font-size:22px;margin-bottom:24px}
+.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rc{background:var(--white);border:1px solid #F2D5D2;border-radius:var(--radius-md);overflow:hidden;transition:transform .2s;cursor:pointer}
+.rc:hover{transform:translateY(-3px)}
+.rt{height:100px;background:var(--red-pale);display:flex;align-items:center;justify-content:center;font-size:48px}
+.rb{padding:16px}.rcat{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);margin-bottom:6px}
+.rb h4{font-size:13px;font-weight:700;color:var(--text);line-height:1.4}
+footer{background:#1C0C0A;padding:28px 6vw;text-align:center}
+footer p{font-size:13px;color:rgba(255,255,255,.5)}footer a{color:#E8736A}
+@media(max-width:600px){.rg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav-top">
+  <div class="nav-logo">🍓 FTU Care Box</div>
+  <button class="nav-back" onclick="window.location.href='index.html'">← Về trang chủ</button>
+</nav>
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-cat-tag">🌸 Vệ sinh</div>
+    <h1>Cách Dùng Băng Vệ Sinh<br>Đúng Cách & An Toàn</h1>
+    <p class="lead">Nghe có vẻ cơ bản, nhưng nhiều bạn vẫn chưa biết đúng cách thay và vệ sinh để tránh viêm nhiễm. Mình cùng tìm hiểu nhé!</p>
+    <div class="blog-meta-row">
+      <div class="blog-meta-item">📅 <span>FTU Care Box · 2025</span></div>
+      <div class="blog-meta-item">⏱️ <span>Đọc trong 3 phút</span></div>
+      <div class="blog-meta-item">🌸 <span>Vệ sinh</span></div>
+    </div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="img-ph"><span>🖼️</span><p>[ Thêm ảnh minh họa vào đây ]</p></div>
+  <div class="intro-box">💬 Dùng băng vệ sinh không đúng cách có thể dẫn đến viêm nhiễm, phát ban, và nhiều khó chịu khác. Mình chia sẻ những lưu ý quan trọng để bạn luôn an toàn nhé!</div>
+  <h2 class="h2">Thời gian thay <em>như thế nào?</em></h2>
+  <div class="steps">
+    <div class="step"><div class="sn">01</div><div><h3>Thay mỗi 4-6 tiếng — dù lượng máu ít</h3><p>Băng vệ sinh ẩm ướt là môi trường lý tưởng cho vi khuẩn phát triển. Dù ngày kinh ít hay nhiều, hãy thay đều đặn — không nên dùng một miếng quá 8 tiếng.</p></div></div>
+    <div class="step"><div class="sn">02</div><div><h3>Rửa tay trước và sau khi thay</h3><p>Bước này nhiều bạn hay bỏ qua! Rửa tay sạch trước khi mở băng mới giúp tránh đưa vi khuẩn vào vùng nhạy cảm.</p></div></div>
+    <div class="step"><div class="sn">03</div><div><h3>Vệ sinh vùng kín đúng hướng</h3><p>Luôn lau từ trước ra sau (từ âm đạo về phía hậu môn) — không bao giờ ngược lại. Điều này giúp tránh vi khuẩn từ hậu môn lây sang âm đạo.</p></div></div>
+    <div class="step"><div class="sn">04</div><div><h3>Dùng nước sạch ấm để vệ sinh</h3><p>Không cần xà phòng thơm hay dung dịch vệ sinh đặc biệt — nước sạch ấm là đủ! Vùng kín có khả năng tự làm sạch, xà phòng có thể phá vỡ độ pH tự nhiên.</p></div></div>
+    <div class="step"><div class="sn">05</div><div><h3>Cuộn và bọc kín băng cũ trước khi bỏ</h3><p>Cuộn băng cũ lại, bọc bằng giấy vệ sinh hoặc túi nhỏ trước khi bỏ vào thùng rác — đảm bảo vệ sinh cho không gian chung nhé!</p></div></div>
+  </div>
+  <p class="cp">Những lưu ý nhỏ này nghe đơn giản nhưng bảo vệ sức khỏe của bạn rất hiệu quả. Chăm sóc bản thân tốt là cách yêu thương bản thân hay nhất! 🩷</p>
+</div>
+<div class="back-strip">
+  <h3>Còn nhiều bài hay khác nữa 🍓</h3>
+  <div class="btns">
+    <button class="bw" onclick="window.location.href='blog.html'">← Xem tất cả bài viết</button>
+    <button class="bg" onclick="window.location.href='index.html'">Về trang chủ</button>
+  </div>
+</div>
+<div class="related">
+  <h3>Bài viết liên quan</h3>
+  <div class="rg">
+    <div class="rc" onclick="window.location.href='blog-giam-dau.html'"><div class="rt">🌡️</div><div class="rb"><div class="rcat">Giảm đau</div><h4>5 cách giảm đau bụng kinh</h4></div></div>
+    <div class="rc" onclick="window.location.href='blog-dinh-duong.html'"><div class="rt">🥗</div><div class="rb"><div class="rcat">Dinh dưỡng</div><h4>Ăn gì trong kỳ kinh?</h4></div></div>
+    <div class="rc" onclick="window.location.href='blog-y-te.html'"><div class="rt">💊</div><div class="rb"><div class="rcat">Y tế</div><h4>Khi nào cần gặp bác sĩ?</h4></div></div>
+  </div>
+</div>
+<footer><p>© 2025 <a href="index.html">FTU Care Box</a> · Trạm Cứu Trợ Ngày Dâu 🍓</p></footer>
+</body>
+</html>

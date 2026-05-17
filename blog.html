@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Sức Khỏe – FTU Care Box</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --red: #B5271F; --red-dark: #8C1D16; --red-pale: #FDECEA;
+  --cream: #FDF6F0; --white: #FFFFFF;
+  --text: #2C1A18; --text-mid: #6B3A35; --text-soft: #9E6B66;
+  --radius-sm: 12px; --radius-md: 20px; --radius-lg: 32px;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+a { text-decoration: none; color: inherit; }
+
+.nav-top {
+  background: var(--white); padding: 0 6vw;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px; border-bottom: 1px solid #F2D5D2;
+  position: sticky; top: 0; z-index: 200;
+}
+.nav-logo { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--red); }
+.nav-back { background: var(--red-pale); color: var(--red); border: none; border-radius: 50px; padding: 8px 20px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+.nav-back:hover { background: var(--red); color: white; }
+
+.blog-hero {
+  background: var(--red); padding: 60px 6vw; text-align: center;
+}
+.blog-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(28px,4vw,48px); color: white; margin-bottom: 12px; }
+.blog-hero p { color: rgba(255,255,255,.8); font-size: 16px; font-weight: 300; }
+
+.blog-grid-section { padding: 60px 6vw; }
+.section-tag { display: inline-block; background: var(--red-pale); color: var(--red); font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 32px; }
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+.blog-card {
+  background: var(--white); border: 1px solid #F2D5D2;
+  border-radius: var(--radius-md); overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+.blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(181,39,31,.1); }
+.blog-thumb { height: 160px; display: flex; align-items: center; justify-content: center; font-size: 72px; background: var(--red-pale); }
+.blog-body { padding: 22px; }
+.blog-cat { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--red); margin-bottom: 8px; }
+.blog-card h3 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.4; }
+.blog-card p { font-size: 13px; color: var(--text-soft); line-height: 1.7; margin-bottom: 14px; }
+.blog-meta { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-soft); }
+.read-btn { background: var(--red); color: white; border: none; border-radius: 50px; padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+.read-btn:hover { background: var(--red-dark); }
+
+.coming-soon {
+  border: 2px dashed #F2C0BB; border-radius: var(--radius-md);
+  padding: 48px 24px; text-align: center; background: white;
+}
+.coming-soon .cs-icon { font-size: 48px; margin-bottom: 16px; }
+.coming-soon h3 { font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+.coming-soon p { font-size: 14px; color: var(--text-soft); }
+
+footer { background: #1C0C0A; padding: 32px 6vw; text-align: center; }
+footer p { font-size: 13px; color: rgba(255,255,255,.5); }
+footer a { color: var(--red); }
+
+@media(max-width:768px) { .blog-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav-top">
+  <div class="nav-logo">🍓 FTU Care Box</div>
+  <button class="nav-back" onclick="window.location.href='index.html'">← Về trang chủ</button>
+</nav>
+
+<div class="blog-hero">
+  <h1>Blog Sức Khỏe 🌸</h1>
+  <p>Kiến thức thiết thực, dễ hiểu — dành riêng cho những ngày đặc biệt của bạn</p>
+</div>
+
+<section class="blog-grid-section">
+  <div class="section-tag">Tất cả bài viết</div>
+  <div class="blog-grid">
+
+    <div class="blog-card">
+      <div class="blog-thumb">🌡️</div>
+      <div class="blog-body">
+        <div class="blog-cat">Giảm đau</div>
+        <h3>5 cách giảm đau bụng kinh không cần thuốc</h3>
+        <p>Chườm nóng, trà gừng, yoga nhẹ... những mẹo đơn giản có thể áp dụng ngay tại trường.</p>
+        <div class="blog-meta">
+          <span>📅 Sắp ra mắt</span>
+          <button class="read-btn" onclick="window.location.href='blog-giam-dau.html'">Đọc thêm →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <div class="blog-thumb">🥗</div>
+      <div class="blog-body">
+        <div class="blog-cat">Dinh dưỡng</div>
+        <h3>Ăn gì trong kỳ kinh để khỏe và ít đau hơn?</h3>
+        <p>Sắt, magie, omega-3 — những dưỡng chất cơ thể cần nhất trong những ngày này.</p>
+        <div class="blog-meta">
+          <span>📅 Sắp ra mắt</span>
+          <button class="read-btn" onclick="window.location.href='blog-dinh-duong.html'">Đọc thêm →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <div class="blog-thumb">🧘</div>
+      <div class="blog-body">
+        <div class="blog-cat">Tâm lý</div>
+        <h3>Tại sao dễ cáu và buồn trong kỳ kinh? Hiểu để không trách mình</h3>
+        <p>Hormone estrogen và progesterone thay đổi ảnh hưởng trực tiếp đến tâm trạng của bạn.</p>
+        <div class="blog-meta">
+          <span>📅 Sắp ra mắt</span>
+          <button class="read-btn" onclick="window.location.href='blog-tam-ly.html'">Đọc thêm →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <div class="blog-thumb">💊</div>
+      <div class="blog-body">
+        <div class="blog-cat">Y tế</div>
+        <h3>Khi nào cần gặp bác sĩ phụ khoa?</h3>
+        <p>Đau quá mức, chu kỳ không đều, ra nhiều... những dấu hiệu bạn không nên bỏ qua.</p>
+        <div class="blog-meta">
+          <span>📅 Sắp ra mắt</span>
+          <button class="read-btn" onclick="window.location.href='blog-y-te.html'">Đọc thêm →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <div class="blog-thumb">🌸</div>
+      <div class="blog-body">
+        <div class="blog-cat">Vệ sinh</div>
+        <h3>Cách dùng băng vệ sinh đúng cách & an toàn</h3>
+        <p>Thời gian thay, cách bảo quản, vệ sinh vùng kín — những điều cần biết để khỏe mạnh hơn.</p>
+        <div class="blog-meta">
+          <span>📅 Sắp ra mắt</span>
+          <button class="read-btn" onclick="window.location.href='blog-ve-sinh.html'">Đọc thêm →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="coming-soon">
+      <div class="cs-icon">✍️</div>
+      <h3>Bài viết mới sắp ra lò!</h3>
+      <p>Mình đang chuẩn bị thêm nhiều nội dung hay — theo dõi để không bỏ lỡ nhé 🍓</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <a href="index.html">FTU Care Box</a> · Trạm Cứu Trợ Ngày Dâu 🍓</p>
+</footer>
+
+</body>
+</html>

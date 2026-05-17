@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khi Nào Cần Gặp Bác Sĩ Phụ Khoa – FTU Care Box</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--red:#B5271F;--red-pale:#FDECEA;--cream:#FDF6F0;--white:#FFFFFF;--text:#2C1A18;--text-mid:#6B3A35;--text-soft:#9E6B66;--radius-sm:12px;--radius-md:20px}
+html{scroll-behavior:smooth}body{font-family:'Be Vietnam Pro',sans-serif;background:var(--cream);color:var(--text);line-height:1.8}a{text-decoration:none;color:inherit}
+.nav-top{background:var(--white);padding:0 6vw;display:flex;align-items:center;justify-content:space-between;height:64px;border-bottom:1px solid #F2D5D2;position:sticky;top:0;z-index:200}
+.nav-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--red)}
+.nav-back{background:var(--red-pale);color:var(--red);border:none;border-radius:50px;padding:8px 20px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
+.nav-back:hover{background:var(--red);color:white}
+.blog-hero{background:var(--red);padding:64px 6vw 48px;overflow:hidden;position:relative}
+.blog-hero-inner{max-width:720px;position:relative;z-index:2}
+.blog-cat-tag{display:inline-block;background:rgba(255,255,255,0.2);color:white;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:20px}
+.blog-hero h1{font-family:'Playfair Display',serif;font-size:clamp(26px,4vw,46px);color:white;line-height:1.2;margin-bottom:16px}
+.lead{color:rgba(255,255,255,0.82);font-size:16px;font-weight:300;line-height:1.8;max-width:580px;margin-bottom:24px}
+.blog-meta-row{display:flex;gap:20px;flex-wrap:wrap}
+.blog-meta-item{color:rgba(255,255,255,0.65);font-size:13px;display:flex;align-items:center;gap:6px}
+.wrap{max-width:760px;margin:0 auto;padding:56px 6vw}
+.img-ph{width:100%;height:260px;background:var(--red-pale);border-radius:var(--radius-md);border:2px dashed #F2C0BB;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;margin-bottom:36px}
+.img-ph span:first-child{font-size:48px}.img-ph p{font-size:13px;color:var(--text-soft)}
+.intro-box{background:var(--red-pale);border-left:4px solid var(--red);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:20px 24px;margin-bottom:36px;font-size:15px;color:var(--text-mid);font-style:italic;line-height:1.8}
+.h2{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--text);margin:36px 0 14px}
+.h2 em{font-style:italic;color:var(--red)}
+.cp{font-size:15px;color:var(--text-soft);line-height:1.85;margin-bottom:14px;font-weight:300}
+.coming{background:var(--white);border:2px dashed #F2C0BB;border-radius:var(--radius-md);padding:48px 32px;text-align:center;margin:24px 0}
+.coming .ci{font-size:56px;margin-bottom:16px}
+.coming h3{font-size:20px;font-weight:700;color:var(--text);margin-bottom:10px}
+.coming p{font-size:14px;color:var(--text-soft);margin-bottom:20px}
+.coming-btn{background:var(--red);color:white;border:none;border-radius:50px;padding:12px 28px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.back-strip{background:var(--red);padding:40px 6vw;text-align:center}
+.back-strip h3{font-family:'Playfair Display',serif;font-size:22px;color:white;margin-bottom:16px}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.bw{background:white;color:var(--red);border:none;border-radius:50px;padding:12px 28px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+.bg{background:transparent;color:white;border:2px solid rgba(255,255,255,0.5);border-radius:50px;padding:10px 26px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
+.related{padding:40px 6vw;max-width:760px;margin:0 auto}
+.related h3{font-family:'Playfair Display',serif;font-size:22px;margin-bottom:20px}
+.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rc{background:var(--white);border:1px solid #F2D5D2;border-radius:var(--radius-md);overflow:hidden;transition:transform .2s;cursor:pointer}
+.rc:hover{transform:translateY(-3px)}
+.rt{height:90px;background:var(--red-pale);display:flex;align-items:center;justify-content:center;font-size:44px}
+.rb{padding:14px}.rcat{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);margin-bottom:5px}
+.rb h4{font-size:13px;font-weight:700;color:var(--text);line-height:1.4}
+footer{background:#1C0C0A;padding:28px 6vw;text-align:center}
+footer p{font-size:13px;color:rgba(255,255,255,.5)}footer a{color:#E8736A}
+@media(max-width:600px){.rg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="nav-top">
+  <div class="nav-logo">🍓 FTU Care Box</div>
+  <button class="nav-back" onclick="window.location.href='index.html'">← Về trang chủ</button>
+</nav>
+<div class="blog-hero">
+  <div class="blog-hero-inner">
+    <div class="blog-cat-tag">💊 Y tế</div>
+    <h1>Khi Nào Cần Gặp Bác Sĩ Phụ Khoa</h1>
+    <p class="lead">Không phải cứ đau là bình thường. Có những dấu hiệu bạn tuyệt đối không nên bỏ qua về sức khỏe sinh sản của mình.</p>
+    <div class="blog-meta-row">
+      <div class="blog-meta-item">📅 <span>FTU Care Box · 2025</span></div>
+      <div class="blog-meta-item">⏱️ <span>Đọc trong 4 phút</span></div>
+      <div class="blog-meta-item">✍️ <span>Y tế</span></div>
+    </div>
+  </div>
+</div>
+<div class="wrap">
+  <div class="img-ph"><span>🖼️</span><p>[ Thêm ảnh minh họa vào đây ]</p></div>
+  <div class="intro-box">💬 Bài viết này đang được nhóm FTU Care Box chuẩn bị nội dung chi tiết. Mình sẽ cập nhật sớm nhất có thể — cảm ơn bạn đã ghé thăm! 🍓</div>
+  <div class="coming">
+    <div class="ci">✍️</div>
+    <h3>Bài viết đang được chuẩn bị...</h3>
+    <p>Nhóm mình đang nghiên cứu và viết nội dung chất lượng nhất cho bạn. Trong lúc chờ, bạn có thể đọc các bài viết khác nhé!</p>
+    <button class="coming-btn" onclick="window.location.href='blog.html'">Xem bài viết khác →</button>
+  </div>
+</div>
+<div class="back-strip">
+  <h3>Còn nhiều bài hay khác nữa 🍓</h3>
+  <div class="btns">
+    <button class="bw" onclick="window.location.href='blog.html'">← Xem tất cả bài viết</button>
+    <button class="bg" onclick="window.location.href='index.html'">Về trang chủ</button>
+  </div>
+</div>
+<div class="related">
+  <h3>Bài viết liên quan</h3>
+  <div class="rg">
+    <div class="rc" onclick="window.location.href='blog-giam-dau.html'"><div class="rt">🌡️</div><div class="rb"><div class="rcat">Giảm đau</div><h4>5 cách giảm đau bụng kinh</h4></div></div>
+    <div class="rc" onclick="window.location.href='blog-dinh-duong.html'"><div class="rt">🥗</div><div class="rb"><div class="rcat">Dinh dưỡng</div><h4>Ăn gì trong kỳ kinh?</h4></div></div>
+    <div class="rc" onclick="window.location.href='blog-tam-ly.html'"><div class="rt">🧘</div><div class="rb"><div class="rcat">Tâm lý</div><h4>Tại sao dễ cáu gắt?</h4></div></div>
+  </div>
+</div>
+<footer><p>© 2025 <a href="index.html">FTU Care Box</a> · Trạm Cứu Trợ Ngày Dâu 🍓</p></footer>
+</body>
+</html>
